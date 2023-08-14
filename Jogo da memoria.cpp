@@ -137,11 +137,15 @@ int facil()
             {
                 cout << "\nMesmo local escolhido, favor escolher um diferente.\n";
                 cont --;
+                Sleep(1500);
+                system("cls");
             }
             else if(J[i][j] != 0)
             {
                 cout << "\nLocal já descoberto, favor escolher outro.\n";
                 cont--;
+                Sleep(1500);
+                system("cls");
             }
             else
             {
@@ -294,11 +298,15 @@ int medio()
             {
                 cout << "\nMesmo local escolhido, favor escolher um diferente.\n";
                 cont --;
+                Sleep(1500);
+                system("cls");
             }
             else if(J[i][j] != 0)
             {
                 cout << "\nLocal já descoberto, favor escolher outro.\n";
                 cont--;
+                Sleep(1500);
+                system("cls");
             }
             else
             {
@@ -359,7 +367,7 @@ int medio()
                     cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÊ PERDEU !!!\n";
                 }
             }
-    }  
+    }
 }
 
 int dificil()
@@ -472,11 +480,15 @@ int dificil()
             {
                 cout << "\nMesmo local escolhido, favor escolher um diferente.\n";
                 cont --;
+                Sleep(1500);
+                system("cls");
             }
             else if(J[i][j] != 0)
             {
                 cout << "\nLocal já descoberto, favor escolher outro.\n";
                 cont--;
+                Sleep(1500);
+                system("cls");
             }
             else
             {
