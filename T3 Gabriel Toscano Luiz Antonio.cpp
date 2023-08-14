@@ -17,11 +17,11 @@ int main()   ///inicio do programa
     srand(time(NULL));
 
     cout << "                                    ------------------------------------ \n";
-    cout << "                                   |           JOGO DA MEMÓRIA          |\n";
+    cout << "                                   |           JOGO DA MEMÃ“RIA          |\n";
     cout << "                                    ------------------------------------ \n";
-    cout << "\n                    Digite qual dificuldade você deseja jogar!! \n\n ";
-    cout << "                    1-Fácil \n\n                     2-Médio\n\n                     3-Difícil\n\n";
-    cout << "                    Escolha somente o número : ";
+    cout << "\n                    Digite qual dificuldade vocÃª deseja jogar!! \n\n ";
+    cout << "                    1-FÃ¡cil \n\n                     2-MÃ©dio\n\n                     3-DifÃ­cil\n\n";
+    cout << "                    Escolha somente o nÃºmero : ";
     cin >> dificuldade;
     system("cls");
     switch (dificuldade)
@@ -36,8 +36,8 @@ int main()   ///inicio do programa
             dificil();
             break;
     }
-
-return 0;
+    cout << "\n\nDESENVOLVIDO POR : GABRIEL TOSCANO\n";
+    return 0;
 }
 
 int facil()
@@ -98,7 +98,7 @@ int facil()
             J[i][j]= 0;
         }
     }
-    cout << "\n                                              JOGO DA MEMÓRIA [ Fácil ]\n\n                                    ";
+    cout << "\n                                              JOGO DA MEMÃ“RIA [ FÃ¡cil ]\n\n                                    ";
     system("pause");
     while(jogadas < 24 && acerto == false)
     {
@@ -140,7 +140,7 @@ int facil()
             }
             else if(J[i][j] != 0)
             {
-                cout << "\nLocal já descoberto, favor escolher outro.\n";
+                cout << "\nLocal jÃ¡ descoberto, favor escolher outro.\n";
                 cont--;
             }
             else
@@ -184,18 +184,14 @@ int facil()
             if(chec == 0)
             {
                 acerto = true;
-                cout << "\n\n!!! VOCÊ GANHOU !!! PARABÉNS !!!\n";
-
-                cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                cout << "\n\n!!! VOCÃŠ GANHOU !!! PARABÃ‰NS !!!\n";
             }
             else
             {
                 jogadas ++;
                 if(jogadas == 24)
                 {
-                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÊ PERDEU !!!\n";
-
-                    cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÃŠ PERDEU !!!\n";
                 }
             }
     }
@@ -250,7 +246,7 @@ int medio()
             J[i][j]= 0;
         }
     }
-    cout << "\n                                             JOGO DA MEMÓRIA [ Médio ]\n\n                                   ";
+    cout << "\n                                             JOGO DA MEMÃ“RIA [ MÃ©dio ]\n\n                                   ";
     system("pause");
     while(jogadas < 36 && acerto == false)
     {
@@ -301,7 +297,7 @@ int medio()
             }
             else if(J[i][j] != 0)
             {
-                cout << "\nLocal já descoberto, favor escolher outro.\n";
+                cout << "\nLocal jÃ¡ descoberto, favor escolher outro.\n";
                 cont--;
             }
             else
@@ -353,21 +349,17 @@ int medio()
             if(chec == 0)
             {
                 acerto = true;
-                cout << "\n\n!!! VOCÊ GANHOU !!! PARABÉNS !!!\n";
-
-                cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                cout << "\n\n!!! VOCÃŠ GANHOU !!! PARABÃ‰NS !!!\n";
             }
             else
             {
                 jogadas ++;
                 if(jogadas == 36)
                 {
-                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÊ PERDEU !!!\n";
-
-                    cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÃŠ PERDEU !!!\n";
                 }
             }
-    }
+    }  
 }
 
 int dificil()
@@ -432,7 +424,7 @@ int dificil()
             J[i][j]= 0;
         }
     }
-    cout << "\n                                              JOGO DA MEMÓRIA [ Difícil ]\n\n                                     ";
+    cout << "\n                                              JOGO DA MEMÃ“RIA [ DifÃ­cil ]\n\n                                     ";
     system("pause");
     while(jogadas < 54 && acerto == false)
     {
@@ -483,7 +475,7 @@ int dificil()
             }
             else if(J[i][j] != 0)
             {
-                cout << "\nLocal já descoberto, favor escolher outro.\n";
+                cout << "\nLocal jÃ¡ descoberto, favor escolher outro.\n";
                 cont--;
             }
             else
@@ -535,18 +527,14 @@ int dificil()
             if(chec == 0)
             {
                 acerto = true;
-                cout << "\n\n!!! VOCÊ GANHOU !!! PARABÉNS !!!\n";
-
-                cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                cout << "\n\n!!! VOCÃŠ GANHOU !!! PARABÃ‰NS !!!\n";
             }
             else
             {
                 jogadas ++;
                 if(jogadas == 54)
                 {
-                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÊ PERDEU !!!\n";
-
-                    cout << "\n\nDESENVOLVIDO POR : LUIZ ANTONIO E GABRIEL TOSCANO\n";
+                    cout << "\n\n!!! JOGADAS ENCERRADAS !!! VOCÃŠ PERDEU !!!\n";
                 }
             }
     }
